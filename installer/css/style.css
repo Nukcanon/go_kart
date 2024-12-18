@@ -30,6 +30,15 @@ a {
 		text-decoration: underline;
 	}
 
+.button {
+	font-size:1.4em;
+	padding:10px 20px 10px 20px;
+	width:100px; height:40px;
+	border:0px;
+	background-color:#03a9f4;
+	border-radius:20px ;
+}
+
 .topbanner {
 	margin: auto;
 	padding: 12px 3px;
@@ -108,9 +117,6 @@ a {
 .navfolderdocs {
 	height: 1100px;
 }
-
-
-
 
 
 .dp-highlighter {
