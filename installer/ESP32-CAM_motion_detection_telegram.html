@@ -1,9 +1,10 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" style="display:flex;height:100%;flex-direction:column;">
 <head>
 	<meta charset="utf-8" />
-	<title>Nukcanon ESP32-CAM 모션감지 텔레그램 전송</title>
+	<title>Nukcanon Arduino Gokart</title>
 	<base href='./' />
 	<link rel="stylesheet" href="css/style.css" />
+	<script src="https://github.com/dbuezas/arduino-web-uploader/releases/download/v1.1.2/main.js"></script>
 </head>
 <body style="padding-bottom:3px;align-items:center">
 <div class="topbanner">
@@ -19,26 +20,17 @@
 	<div style="margin: auto; padding: 0px 6px 36px; max-width: 960px;">
 		<div class='navfoldercontainer'>
 			<div class='navfolder'>
-			<h2>ESP32-CAM 모션감지 텔레그램 전송<br>
+			<h2>Arduino Gokart<br>
 			OneClick uploader</h2>
 			</div>
 			<div style="line-height:2.0em">
 			<ol>
-  				<li>ESP32-CAM을 flashing 모드로 설정하여 컴퓨터와 연결합니다.
-					<br>flashing 모드 진입 방법
-					<br>아래 회로도 사용 시: IO0와 GND 연결
-					<br>전용 programmer board 사용 시: boot(혹은 IO0)버튼 누른상태 -> reset버튼눌럿다 떼기 -> boot(혹은 IO0)버튼 떼기</li>
- 				<li>다른 ESP32-CAM을 사용하는 프로그램(Arduino IDE 등)을 모두 끕니다.
+  				<li>Arduino을 컴퓨터와 연결합니다.
+ 				<li>Arduino을 사용하는 다른 프로그램(Arduino IDE 등)을 모두 끕니다.
 					<br>특히 Arduino IDE의 시리얼 모니터가 켜져있으면 업로드가 불가능합니다.</li>
-  				<li>이 페이지 가장 아래의 Connect 버튼을 누른 후, 팝업창에서 ESP32-CAM의 포트를 선택하여 연결합니다.</li>
-				<li>팝업창에서 INSTALL을 선택하면 프로그램 업로드가 시작됩니다.</li>
-				<li>업로드가 완료되면 flashing 모드를 해제한 후, ESP32-CAM을 reset 합니다.
-					<br>flashing 모드를 해제 방법
-					<br>아래 회로도 사용 시: IO0와 GND 연결 해제 후 reset버튼 누르기
-					<br>전용 programmer board 사용 시: reset버튼 누르기</li>
-				<li>아래의 Connect 버튼을 다시 누른 후 LOGS & CONSOLE에 진입하여, 오른쪽 아래의 RESET DEVICE 버튼을 누르면, 해당 ESP32의 이름을 확인할 수 있습니다.
-					<br>디바이스 이름은 "ESP32-1234"와 같이 4자리 숫자로 이루어져 있습니다.
-				<li>스마트폰이나 컴퓨터의 Wi-Fi로 확인한 이름을 가진 ESP32와 연결 한 후, 인터넷 브라우저로 http://192.168.4.1 에 접속하여 WiFiManeger를 설정합니다.</li>
+  				<li>이 페이지 가장 아래의 버튼들 중 누른 후, 자신이 가지고 있는 Arduino의 기종에 맞는 버튼을 누릅니다.
+					<br>주의> Arduino Nano의 중국 복제품의 경우 Nano oldbootloader 버튼을 누릅니다. </li>
+				<li>버튼 옆의 숫자가 100%가 되고, Done!이 뜨면, 업로드가 완료된 것입니다.</li>
 				<div style="text-align : center;"> <a target="_blank" href="https://github.com/Nukcanon/ESP32-CAM_motion_detection_telegram/blob/main/V1.1/ESP32-CAM_motion_detection_telegram.ino">프로그램 소스 보기</a></div>
 			</ol>
 			</div>
@@ -132,9 +124,23 @@
 				</div>
 			</div>
 			<div style="text-align: center;max-width: 960px;">
-			<script type="module" src="https://unpkg.com/esp-web-tools@9.0.3/dist/web/install-button.js?module"></script>
-			<esp-web-install-button manifest="manifest.json"></esp-web-install-button>
-		</div>
+			  <button arduino-uploader hex-href="./test/Blink.ino.lgt8f328p.hex" board="lgt8f328p" verify>
+			    Upload Blink to lgt8f328p [<span class="upload-progress"></span>]
+			  </button>
+			  <button arduino-uploader hex-href="./test/Blink.ino.lgt8f328p.hex" board="lgt8f328p"
+			    port-filters='[{"usbProductId":46388,"usbVendorId":1241}]'>
+			    lgt8f328p filtered to {' usbProductId':46388,'usbVendorId':1241} [<span class="upload-progress"></span>]
+			  </button>
+			  <button arduino-uploader hex-href="./test/Blink.ino.uno.hex" board="nano" verify>
+			    Upload Blink to nano/uno/pro/pro-mini [<span class="upload-progress"></span>]
+			  </button>
+			  <button arduino-uploader hex-href="./test/Blink.ino.uno.hex" board="nanoOldBootloader" verify>
+			    Upload Blink to nano with old bootloader (most chinese clones) [<span class="upload-progress"></span>]
+			  </button>
+			  <button arduino-uploader hex-href="./test/0-blink.4809.hex" board="avr4809" verify>
+			    Upload Blink to avr4809 [<span class="upload-progress"></span>]
+			  </button>
+			</div>
 		</div>
 	</div>
 </div>
