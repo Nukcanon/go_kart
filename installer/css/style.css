@@ -31,24 +31,20 @@ a {
 	}
 
 button {
-  cursor: pointer;
-  color: black;
-  width: 500px;
-  height: 30px;
-  display: block;
-  margin: 0 auto;
-  border: solid 1px black;
-  background-color: #03a9f4;
-  border-radius: 5px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
+	padding:10px 15px 10px 15px;
+	min-width: 300px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 700;
+	background-color: #03a9f4;
+	box-shadow: 0px -3px 3px #ffffff, 0px 3px 3px #cccccc;
 }
 
 button:hover {
     background-color: #2cb7f6;
-    box-shadow: 0px 15px 20px rgba(27, 39, 63, 0.4);
+    box-shadow: 0px -3px 3px #ffffff, 0px 3px 3px #cccccc;
     color: whitesmoke;
-    transform: translateY(-5px);
 }
 
 .topbanner {
