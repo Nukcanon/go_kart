@@ -33,9 +33,10 @@ a {
 button {
 	padding:8px 15px 8px 15px;
 	min-width: 300px;
-	height: 40px;
+	min-height: 40px;
+	border: 0px;
 	border-radius: 20px;
-	font-size: 16px;
+	font-size: 1.5rem;
 	font-weight: 400;
 	background-color: #03a9f4;
 	color: #ffffff;
