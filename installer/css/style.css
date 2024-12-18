@@ -1,4 +1,12 @@
-﻿body {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+:root {
+  --button-color: #ffffff;
+  --button-bg-color: #0d6efd;
+  --button-hover-bg-color: #025ce2;
+}
+
+body {
 	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
@@ -48,7 +56,7 @@ button {
   text-decoration: none;
   
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   
   display: inline-block;
   width: auto;
@@ -85,14 +93,6 @@ button:focus {
 button:disabled {
   opacity: 0.5;
 }
-
-form {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100vh;
-}
-
 
 .topbanner {
 	margin: auto;
