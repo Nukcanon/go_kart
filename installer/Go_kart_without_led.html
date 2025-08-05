@@ -89,22 +89,33 @@
 			</div>
 			<br>
 			<div style="text-align: center;max-width: 960px;">
-				<button arduino-uploader hex-href="./Go_kart_without_led_nano.hex" board="nano" verify>
-				Upload to NANO [<span class="upload-progress"></span>]
-				</button>
-					<br>
-					<br>
-				<button arduino-uploader hex-href="./Go_kart_without_led_nano.hex" board="nanoOldBootloader" verify>
-				Upload to NANO 구형(Oldboot) [<span class="upload-progress"></span>]
-				</button>
-				<script type="module" src="https://unpkg.com/esp-web-tools@9.0.3/dist/web/install-button.js?module"></script>
-				<esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+				<ul>
+				        <li>Arduino 버전</li>
+					<button arduino-uploader hex-href="./Go_kart_without_led_nano.hex" board="nano" verify>
+					Upload to NANO [<span class="upload-progress"></span>]
+					</button>
+						<br>
+						<br>
+					<button arduino-uploader hex-href="./Go_kart_without_led_nano.hex" board="nanoOldBootloader" verify>
+					Upload to NANO 구형(Oldboot) [<span class="upload-progress"></span>]
+					</button>
+				</ul>
+			</div>
+			<br>
+			<br>
+			<div style="text-align: center;max-width: 960px;">
+				<ul>
+					<li>ESP32 버전</li>
+					<script type="module" src="https://unpkg.com/esp-web-tools@9.0.3/dist/web/install-button.js?module"></script>
+					<esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+				</ul>
 			</div>
 		</div>
 	</div>
 </div>
 </body>
 </html>
+
 
 
 
