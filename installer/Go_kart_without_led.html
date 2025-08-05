@@ -24,16 +24,17 @@
 			OneClick uploader</h2>
 			</div>
 			<div style="line-height:2.0em">
-			<ol>
-  				<li>Arduino을 컴퓨터와 연결합니다.
- 				<li>Arduino을 사용하는 다른 프로그램(Arduino IDE 등)을 모두 끕니다.
-					<br>특히 Arduino IDE의 시리얼 모니터가 켜져있으면 업로드가 불가능합니다.</li>
-  				<li>이 페이지 가장 아래의 버튼들 중 누른 후, 자신이 가지고 있는 Arduino의 기종에 맞는 버튼을 누릅니다.
-					<br>주의> Arduino Nano의 중국 복제품의 경우 Nano oldbootloader 버튼을 누릅니다. </li>
-				<li>팝업창에서 Arduino가 연결된 포트를 선택합니다.</li>
-				<li>버튼 옆의 숫자가 100%가 되고, Done!이 뜨면, 업로드가 완료된 것입니다.</li>
-				<div style="text-align : center;"> <a target="_blank" href="https://github.com/Nukcanon/go_kart/blob/main/V1/Go_kart_without_led.ino">프로그램 소스 보기</a></div>
-			</ol>
+				<p><strong>&lt;Arduino 버전&gt;</strong></p>
+				<ol>
+	  				<li>Arduino을 컴퓨터와 연결합니다.
+	 				<li>Arduino을 사용하는 다른 프로그램(Arduino IDE 등)을 모두 끕니다.
+						<br>특히 Arduino IDE의 시리얼 모니터가 켜져있으면 업로드가 불가능합니다.</li>
+	  				<li>이 페이지 가장 아래의 버튼들 중 누른 후, 자신이 가지고 있는 Arduino의 기종에 맞는 버튼을 누릅니다.
+						<br>주의> Arduino Nano의 중국 복제품의 경우 Nano oldbootloader 버튼을 누릅니다. </li>
+					<li>팝업창에서 Arduino가 연결된 포트를 선택합니다.</li>
+					<li>버튼 옆의 숫자가 100%가 되고, Done!이 뜨면, 업로드가 완료된 것입니다.</li>
+					<div style="text-align : center;"> <a target="_blank" href="https://github.com/Nukcanon/go_kart/blob/main/V1/Go_kart_without_led.ino">프로그램 소스 보기</a></div>
+				</ol>
 			</div>
 			<div style="text-align: center; max-width: 960px;">
             			<div style="display:inline-block; padding: 0px 6px 10px;">
@@ -87,9 +88,7 @@
 					</table>
 				</div>
 			</div>
-			<br>
 			<div style="text-align: center; max-width: 960px;">
-			    <p><strong>&lt;Arduino 버전&gt;</strong></p>
 			    <button arduino-uploader hex-href="./Go_kart_without_led_nano.hex" board="nano" verify>
 			    Upload to NANO [<span class="upload-progress"></span>]
 			    </button>
@@ -103,59 +102,63 @@
 			<div style="text-align: center; max-width: 960px; margin-top: 2em;">
 				<p><strong>&lt;ESP32 버전&gt;</strong></p>
 				<div style="display:inline-block; padding: 0px 6px 10px;">
-					<table cellspacing="0" style="border-collapse:collapse; border-color:initial; border-style:none; border-width:initial; height:205px; table-layout:fixed; width:228px; margin:auto;">
-					    <thead>
-					        <tr style="background-color:#dcdcdc;">
-					            <th style="border:solid #5d5d5d 1px; padding:8px; text-align:center; font-weight:bold;">핀 번호</th>
-					            <th style="border:solid #5d5d5d 1px; padding:8px; text-align:center; font-weight:bold;">연결 부품</th>
-					            <th style="border:solid #5d5d5d 1px; padding:8px; text-align:center; font-weight:bold;">연결 부품 핀 이름</th>
-					        </tr>
-					    </thead>
+					<table cellspacing="0" style="border-collapse:collapse; table-layout:fixed; margin:auto;">
 					    <tbody>
 					        <tr>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">4</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">MDD10A</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">DIR1</td>
+					            <td style="background-color:#dcdcdc; border:solid #5d5d5d 0.28pt; height:19.48pt; width:48.50pt; vertical-align:middle;">
+					                <p style="text-align:center;"><span style="font-family:Arial; font-size:11pt;">핀 번호</span></p>
+					            </td>
+					            <td style="background-color:#dcdcdc; border:solid #5d5d5d 0.28pt; height:19.48pt; width:153.21pt; vertical-align:middle;">
+					                <p style="text-align:center;"><span style="font-family:Arial; font-size:11pt;">연결 부품</span></p>
+					            </td>
+					            <td style="background-color:#dcdcdc; border:solid #5d5d5d 0.28pt; height:19.48pt; width:153.21pt; vertical-align:middle;">
+					                <p style="text-align:center;"><span style="font-family:Arial; font-size:11pt;">연결 부품 핀 이름</span></p>
+					            </td>
 					        </tr>
 					        <tr>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">13</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">CHC-104B-M4 조이스틱</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">Y축 가변저항 가운데 핀</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">4</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">MDD10A</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">DIR1</td>
 					        </tr>
 					        <tr>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">14</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">네오픽셀 LED (오른쪽)</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">Data In (DIN)</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">13</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">CHC-104B-M4 조이스틱</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">Y축 가변저항 가운데 핀</td>
 					        </tr>
 					        <tr>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">15</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">CHC-104B-M4 조이스틱</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">X축 가변저항 가운데 핀</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">14</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">네오픽셀 LED (오른쪽)</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">Data In (DIN)</td>
 					        </tr>
 					        <tr>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">16</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">MDD10A</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">PWM1</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">15</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">CHC-104B-M4 조이스틱</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">X축 가변저항 가운데 핀</td>
 					        </tr>
 					        <tr>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">18</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">MDD10A</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">DIR2</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">16</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">MDD10A</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">PWM1</td>
 					        </tr>
 					        <tr>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">19</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">MDD10A</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">PWM2</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">18</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">MDD10A</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">DIR2</td>
 					        </tr>
 					        <tr>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">26</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">네오픽셀 LED (후방)</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">Data In (DIN)</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">19</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">MDD10A</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">PWM2</td>
 					        </tr>
 					        <tr>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">27</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">네오픽셀 LED (왼쪽)</td>
-					            <td style="border:solid #5d5d5d 1px; padding:8px; text-align:center;">Data In (DIN)</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">26</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">네오픽셀 LED (후방)</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">Data In (DIN)</td>
+					        </tr>
+					        <tr>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">27</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">네오픽셀 LED (왼쪽)</td>
+					            <td style="border:solid #5d5d5d 0.28pt; height:19.48pt; text-align:center; vertical-align:middle; font-family:Arial; font-size:11pt;">Data In (DIN)</td>
 					        </tr>
 					    </tbody>
 					</table>
@@ -168,6 +171,7 @@
 </div>
 </body>
 </html>
+
 
 
 
