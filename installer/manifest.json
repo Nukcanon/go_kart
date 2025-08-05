@@ -1,0 +1,12 @@
+{
+  "name": "Go_kart_ESP32_BLE",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "Go_kart_with_led_ESP32_BLE.bin", "offset": 0 }
+      ]
+    }
+  ]
+}
