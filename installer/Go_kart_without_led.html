@@ -5,71 +5,69 @@
 	<base href='./' />
 	<link rel="stylesheet" href="https://nukcanon.github.io/nukcanon/css/style.css" />
 	<script src="https://github.com/dbuezas/arduino-web-uploader/releases/download/v1.1.2/main.js"></script>
-    <style>
-        .wiring-table {
-            border-collapse: collapse;
-            width: 100%; 
-            max-width: 800px; 
-            margin: 20px auto;
-            font-size: 1.1rem;
-        }
-        .wiring-table th, .wiring-table td {
-            border: 1px solid #ddd;
-            padding: 15px;
-            text-align: center;
-            vertical-align: middle;
-        }
-        .wiring-table th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-            color: #333;
-        }
-        .wiring-table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        .version-section {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px dashed #eee;
-        }
-        .section-title {
-            color: #0066cc;
-            font-size: 1.5em;
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: inline-block;
-            border-bottom: 2px solid #0066cc;
-            padding-bottom: 5px;
-        }
-
-        .upload-box-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0;
-        }
-        .upload-box {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 20px;
-            background-color: #fcfcfc;
-            width: 45%;
-            min-width: 300px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .upload-box h4 {
-            margin-top: 0;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .upload-box p {
-            font-size: 0.9em;
-            color: #666;
-            margin-bottom: 15px;
-        }
-    </style>
+ <style>
+  .wiring-table {
+border-collapse: collapse;
+width: 100%; 
+max-width: 800px; 
+margin: 20px auto;
+font-size: 1.1rem;
+  }
+  .wiring-table th, .wiring-table td {
+border: 1px solid #ddd;
+padding: 15px;
+text-align: center;
+vertical-align: middle;
+  }
+  .wiring-table th {
+background-color: #f2f2f2;
+font-weight: bold;
+color: #333;
+  }
+  .wiring-table tr:nth-child(even) {
+background-color: #f9f9f9;
+  }
+  .version-section {
+margin-top: 40px;
+padding-top: 20px;
+border-top: 2px dashed #eee;
+  }
+  .section-title {
+color: #0066cc;
+font-size: 1.5em;
+font-weight: bold;
+margin-bottom: 15px;
+display: inline-block;
+border-bottom: 2px solid #0066cc;
+padding-bottom: 5px;
+  }
+  .upload-box-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+margin: 20px 0;
+  }
+  .upload-box {
+border: 1px solid #ccc;
+border-radius: 8px;
+padding: 20px;
+background-color: #fcfcfc;
+width: 45%;
+min-width: 300px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .upload-box h4 {
+margin-top: 0;
+color: #333;
+margin-bottom: 10px;
+  }
+  .upload-box p {
+font-size: 0.9em;
+color: #666;
+margin-bottom: 15px;
+  }
+ </style>
 </head>
 <body style="padding-bottom:3px;align-items:center">
 	<div class="topbanner">
@@ -85,9 +83,9 @@
 	<div style="margin: auto; padding: 0px 6px 36px; max-width: 960px;">
 		<div class='navfoldercontainer'>
 			<div class='navfolder'>
-			    <h2>Arduino Gokart<br>OneClick uploader</h2>
+			 <h2>Arduino Gokart<br>OneClick uploader</h2>
 			</div>
-            <div style="text-align: center; margin-top: 30px;">
+			<div style="text-align: center; margin-top: 30px;">
 				<div class="section-title">1. Arduino 버전 (Nano)</div>
 			</div>
 			<div style="line-height:2.0em">
@@ -99,158 +97,159 @@
 					<li>팝업창에서 Arduino가 연결된 포트를 선택합니다.</li>
 					<li>버튼 옆의 숫자가 100%가 되고, <strong>Done!</strong>이 뜨면 완료입니다.</li>
 				</ol>
-                <div style="text-align : center;"> <a target="_blank" href="https://github.com/Nukcanon/go_kart/blob/main/V1/Go_kart_without_led.ino">프로그램 소스 보기</a></div>
+				<div style="text-align : center;"> <a target="_blank" href="https://github.com/Nukcanon/go_kart/blob/main/V1/Go_kart_without_led.ino">프로그램 소스 보기</a></div>
 			</div>
 			<div style="display: block; width: 100%; text-align: center; margin: 0 auto; padding: 0px 6px 10px;">
-                <table class="wiring-table">
-                    <thead>
-                        <tr>
-                            <th style="width: 20%;">핀 번호</th>
-                            <th style="width: 40%;">연결 부품</th>
-                            <th style="width: 40%;">연결 부품 핀 이름</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>4</td>
-                            <td>MDD10A</td>
-                            <td>DIR1</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>MDD10A</td>
-                            <td>PWM1</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>MDD10A</td>
-                            <td>PWM2</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>MDD10A</td>
-                            <td>DIR2</td>
-                        </tr>
-                        <tr>
-                            <td>A0</td>
-                            <td>CHC-104B-M4 조이스틱</td>
-                            <td>X축 가변저항 가운데 핀</td>
-                        </tr>
-                        <tr>
-                            <td>A1</td>
-                            <td>CHC-104B-M4 조이스틱</td>
-                            <td>Y축 가변저항 가운데 핀</td>
-                        </tr>
-                    </tbody>
-                </table>
+				<table class="wiring-table">
+					<thead>
+						<tr>
+							<th style="width: 20%;">핀 번호</th>
+							<th style="width: 40%;">연결 부품</th>
+							<th style="width: 40%;">연결 부품 핀 이름</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+ <td>4</td>
+ <td>MDD10A</td>
+ <td>DIR1</td>
+</tr>
+<tr>
+ <td>5</td>
+ <td>MDD10A</td>
+ <td>PWM1</td>
+</tr>
+<tr>
+ <td>6</td>
+ <td>MDD10A</td>
+ <td>PWM2</td>
+</tr>
+<tr>
+ <td>7</td>
+ <td>MDD10A</td>
+ <td>DIR2</td>
+</tr>
+<tr>
+ <td>A0</td>
+ <td>CHC-104B-M4 조이스틱</td>
+ <td>X축 가변저항 가운데 핀</td>
+</tr>
+<tr>
+ <td>A1</td>
+ <td>CHC-104B-M4 조이스틱</td>
+ <td>Y축 가변저항 가운데 핀</td>
+</tr>
+  </tbody>
+ </table>
 			</div>
 			<div class="upload-box-container">
-                <div class="upload-box">
-                    <h4>🅰️ 일반 Arduino Nano</h4>
-                    <p>정품 또는 최신 부트로더가 적용 보드</p>
-                    <button arduino-uploader hex-href="./Go_kart_without_led_nano.hex" board="nano" verify style="width:100%; padding: 10px;">
-                        Upload to NANO (NewBoot)
-                    </button>
-                </div>
+ <div class="upload-box">
+  <h4>🅰️ 일반 Arduino Nano</h4>
+  <p>정품 또는 최신 부트로더가 적용 보드</p>
+  <button arduino-uploader hex-href="./Go_kart_without_led_nano.hex" board="nano" verify style="width:100%; padding: 10px;">
+Upload to NANO (NewBoot)
+  </button>
+ </div>
 				<div class="upload-box" style="border-color: #ff9999; background-color: #fff5f5;">
-                    <h4 style="color:#d32f2f;">🅱️ 호환 보드 중 과거 부트로더 적용 보드 (Old Bootloader)</h4>
-                    <button arduino-uploader hex-href="./Go_kart_without_led_nano.hex" board="nanoOldBootloader" verify style="width:100%; padding: 10px; background-color: #d32f2f; color: white; border:none; cursor:pointer;">
-                        Upload to NANO (OldBoot)
-                    </button>
-                </div>
+  <h4 style="color:#d32f2f;">🅱️ 호환 보드 중 과거 부트로더 적용 보드 (Old Bootloader)</h4>
+  <button arduino-uploader hex-href="./Go_kart_without_led_nano.hex" board="nanoOldBootloader" verify style="width:100%; padding: 10px; background-color: #d32f2f; color: white; border:none; cursor:pointer;">
+Upload to NANO (OldBoot)
+  </button>
+ </div>
 			</div>
 			<div class="version-section" style="text-align: center;">
 				<div class="section-title">2. ESP32 버전</div>
 			</div>
 			<div style="line-height:2.0em">
-                <ol>
-                    <li>ESP32를 컴퓨터에 연결합니다.</li>
-                    <li>ESP32 드라이버(CP210x 등)가 설치되어 있어야 합니다.</li>
-                    <li>아래 <strong>INSTALL</strong> 버튼을 눌러 업로드합니다.</li>
-                </ol>
-            </div>
-			<div style="display: block; width: 100%; text-align: center; margin: 0 auto; padding: 0px 6px 10px;">    
-                <table class="wiring-table" style="margin: 10px auto;">
-                    <thead>
-                        <tr>
-                            <th style="width: 20%;">핀 번호</th>
-                            <th style="width: 40%;">연결 부품</th>
-                            <th style="width: 40%;">연결 부품 핀 이름</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>4</td>
-                            <td>MDD10A</td>
-                            <td>DIR1</td>
-                        </tr>
-                        <tr>
-                            <td>32</td>
-                            <td>CHC-104B-M4 조이스틱</td>
-                            <td>Y축 가변저항 가운데 핀</td>
-                        </tr>
-                        <tr>
-                            <td>14</td>
-                            <td>네오픽셀 LED (오른쪽)</td>
-                            <td>Data In (DIN)</td>
-                        </tr>
-                        <tr>
-                            <td>33</td>
-                            <td>CHC-104B-M4 조이스틱</td>
-                            <td>X축 가변저항 가운데 핀</td>
-                        </tr>
-                        <tr>
-                            <td>16</td>
-                            <td>MDD10A</td>
-                            <td>PWM1</td>
-                        </tr>
-                        <tr>
-                            <td>18</td>
-                            <td>MDD10A</td>
-                            <td>DIR2</td>
-                        </tr>
-                        <tr>
-                            <td>19</td>
-                            <td>MDD10A</td>
-                            <td>PWM2</td>
-                        </tr>
-                        <tr>
-                            <td>26</td>
-                            <td>네오픽셀 LED (후방)</td>
-                            <td>Data In (DIN)</td>
-                        </tr>
-                        <tr>
-                            <td>27</td>
-                            <td>네오픽셀 LED (왼쪽)</td>
-                            <td>Data In (DIN)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+ <ol>
+  <li>ESP32를 컴퓨터에 연결합니다.</li>
+  <li>ESP32 드라이버(CP210x 등)가 설치되어 있어야 합니다.</li>
+  <li>아래 <strong>INSTALL</strong> 버튼을 눌러 업로드합니다.</li>
+ </ol>
+</div>
+			<div style="display: block; width: 100%; text-align: center; margin: 0 auto; padding: 0px 6px 10px;"> 
+ <table class="wiring-table" style="margin: 10px auto;">
+  <thead>
+<tr>
+ <th style="width: 20%;">핀 번호</th>
+ <th style="width: 40%;">연결 부품</th>
+ <th style="width: 40%;">연결 부품 핀 이름</th>
+</tr>
+  </thead>
+  <tbody>
+<tr>
+ <td>4</td>
+ <td>MDD10A</td>
+ <td>DIR1</td>
+</tr>
+<tr>
+ <td>32</td>
+ <td>CHC-104B-M4 조이스틱</td>
+ <td>Y축 가변저항 가운데 핀</td>
+</tr>
+<tr>
+ <td>14</td>
+ <td>네오픽셀 LED (오른쪽)</td>
+ <td>Data In (DIN)</td>
+</tr>
+<tr>
+ <td>33</td>
+ <td>CHC-104B-M4 조이스틱</td>
+ <td>X축 가변저항 가운데 핀</td>
+</tr>
+<tr>
+ <td>16</td>
+ <td>MDD10A</td>
+ <td>PWM1</td>
+</tr>
+<tr>
+ <td>18</td>
+ <td>MDD10A</td>
+ <td>DIR2</td>
+</tr>
+<tr>
+ <td>19</td>
+ <td>MDD10A</td>
+ <td>PWM2</td>
+</tr>
+<tr>
+ <td>26</td>
+ <td>네오픽셀 LED (후방)</td>
+ <td>Data In (DIN)</td>
+</tr>
+<tr>
+ <td>27</td>
+ <td>네오픽셀 LED (왼쪽)</td>
+ <td>Data In (DIN)</td>
+</tr>
+  </tbody>
+ </table>
+</div>
 			<div style="text-align: center; max-width: 960px; margin: 10px auto;">
-                
-                <style>
-                    esp-web-install-button::part(button) {
-                        font-size: 1.2rem;
-                        padding: 12px 24px;
-                        background-color: #0066cc;
-                        color: white;
-                        border-radius: 8px;
-                        cursor: pointer;
-                        border: none;
-                    }
-                </style>
+ 
+ <style>
+  esp-web-install-button::part(button) {
+font-size: 1.2rem;
+padding: 12px 24px;
+background-color: #0066cc;
+color: white;
+border-radius: 8px;
+cursor: pointer;
+border: none;
+  }
+ </style>
 				<script type="module" src="https://unpkg.com/esp-web-tools@9.0.3/dist/web/install-button.js?module"></script>
-	    		<esp-web-install-button manifest="manifest.json">
-                    <button slot="activate" style="font-size: 1.2rem; padding: 12px 24px; background-color: #0066cc; color: white; border-radius: 8px; cursor: pointer; border: none;">
-                        CONNECT (Click to Install)
-                    </button>
-                </esp-web-install-button>
+	 		<esp-web-install-button manifest="manifest.json">
+  <button slot="activate" style="font-size: 1.2rem; padding: 12px 24px; background-color: #0066cc; color: white; border-radius: 8px; cursor: pointer; border: none;">
+CONNECT (Click to Install)
+  </button>
+ </esp-web-install-button>
 			</div>
 		</div>
 	</div>
 </body>
 </html>
+
 
 
 
