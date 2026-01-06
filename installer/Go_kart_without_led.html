@@ -173,8 +173,7 @@
                 </div>
 			</div>
 			
-
-            <div class="version-section" style="text-align: center;">
+			<div class="version-section" style="text-align: center;">
 				<div class="section-title">2. ESP32 버전</div>
 			</div>
 
@@ -189,7 +188,7 @@
             <div style="display: block; width: 100%; text-align: center; margin: 0 auto; padding: 0px 6px 10px;">
                 <h4 style="margin-bottom: 5px;">▼ ESP32 연결도</h4>
                 
-                <table class="wiring-table">
+                <table class="wiring-table" style="margin: 10px auto;">
                     <thead>
                         <tr>
                             <th style="width: 20%;">핀 번호</th>
@@ -247,12 +246,30 @@
                 </table>
             </div>
 
-            <div style="text-align: center; max-width: 960px; margin-top: 20px;">
-    			<script type="module" src="https://unpkg.com/esp-web-tools@9.0.3/dist/web/install-button.js?module"></script>
-	    		<esp-web-install-button manifest="manifest.json"></esp-web-install-button>
-			</div>
+            <div style="text-align: center; max-width: 960px; margin: 10px auto;">
+                
+                <style>
+                    /* esp-web-install-button 내부의 버튼 스타일을 강제로 키움 */
+                    esp-web-install-button::part(button) {
+                        font-size: 1.2rem;
+                        padding: 12px 24px;
+                        background-color: #0066cc; /* 원하는 버튼 색상 */
+                        color: white;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        border: none;
+                    }
+                </style>
 
+    			<script type="module" src="https://unpkg.com/esp-web-tools@9.0.3/dist/web/install-button.js?module"></script>
+	    		<esp-web-install-button manifest="manifest.json">
+                    <button slot="activate" style="font-size: 1.2rem; padding: 12px 24px; background-color: #0066cc; color: white; border-radius: 8px; cursor: pointer; border: none;">
+                        CONNECT (Click to Install)
+                    </button>
+                </esp-web-install-button>
+			</div>
 		</div>
 	</div>
 </body>
 </html>
+
