@@ -72,8 +72,7 @@
     </style>
 </head>
 <body style="padding-bottom:3px;align-items:center">
-
-    <div class="topbanner">
+	<div class="topbanner">
 		<div style="align-self:stretch;width:960px;display:flex; flex-direction: row;">
 			<div style="flex:99999">
 				<label>Nukcanon</label>
@@ -83,17 +82,14 @@
 			</div>
 		</div>
 	</div>
-
 	<div style="margin: auto; padding: 0px 6px 36px; max-width: 960px;">
 		<div class='navfoldercontainer'>
 			<div class='navfolder'>
 			    <h2>Arduino Gokart<br>OneClick uploader</h2>
 			</div>
-
             <div style="text-align: center; margin-top: 30px;">
 				<div class="section-title">1. Arduino 버전 (Nano)</div>
 			</div>
-            
 			<div style="line-height:2.0em">
 				<ol>
 	  				<li>Arduino를 컴퓨터와 연결합니다.</li>
@@ -105,8 +101,7 @@
 				</ol>
                 <div style="text-align : center;"> <a target="_blank" href="https://github.com/Nukcanon/go_kart/blob/main/V1/Go_kart_without_led.ino">프로그램 소스 보기</a></div>
 			</div>
-
-            <div style="display: block; width: 100%; text-align: center; margin: 0 auto; padding: 0px 6px 10px;">
+			<div style="display: block; width: 100%; text-align: center; margin: 0 auto; padding: 0px 6px 10px;">
                 <table class="wiring-table">
                     <thead>
                         <tr>
@@ -149,8 +144,7 @@
                     </tbody>
                 </table>
 			</div>
-
-            <div class="upload-box-container">
+			<div class="upload-box-container">
                 <div class="upload-box">
                     <h4>🅰️ 일반 Arduino Nano</h4>
                     <p>정품 또는 최신 부트로더가 적용 보드</p>
@@ -158,28 +152,24 @@
                         Upload to NANO (NewBoot)
                     </button>
                 </div>
-
-                <div class="upload-box" style="border-color: #ff9999; background-color: #fff5f5;">
+				<div class="upload-box" style="border-color: #ff9999; background-color: #fff5f5;">
                     <h4 style="color:#d32f2f;">🅱️ 호환 보드 중 과거 부트로더 적용 보드 (Old Bootloader)</h4>
                     <button arduino-uploader hex-href="./Go_kart_without_led_nano.hex" board="nanoOldBootloader" verify style="width:100%; padding: 10px; background-color: #d32f2f; color: white; border:none; cursor:pointer;">
                         Upload to NANO (OldBoot)
                     </button>
                 </div>
 			</div>
-			
 			<div class="version-section" style="text-align: center;">
 				<div class="section-title">2. ESP32 버전</div>
 			</div>
-
-            <div style="line-height:2.0em">
+			<div style="line-height:2.0em">
                 <ol>
                     <li>ESP32를 컴퓨터에 연결합니다.</li>
                     <li>ESP32 드라이버(CP210x 등)가 설치되어 있어야 합니다.</li>
                     <li>아래 <strong>INSTALL</strong> 버튼을 눌러 업로드합니다.</li>
                 </ol>
             </div>
-
-            <div style="display: block; width: 100%; text-align: center; margin: 0 auto; padding: 0px 6px 10px;">    
+			<div style="display: block; width: 100%; text-align: center; margin: 0 auto; padding: 0px 6px 10px;">    
                 <table class="wiring-table" style="margin: 10px auto;">
                     <thead>
                         <tr>
@@ -237,8 +227,7 @@
                     </tbody>
                 </table>
             </div>
-
-            <div style="text-align: center; max-width: 960px; margin: 10px auto;">
+			<div style="text-align: center; max-width: 960px; margin: 10px auto;">
                 
                 <style>
                     esp-web-install-button::part(button) {
@@ -251,8 +240,7 @@
                         border: none;
                     }
                 </style>
-
-    			<script type="module" src="https://unpkg.com/esp-web-tools@9.0.3/dist/web/install-button.js?module"></script>
+				<script type="module" src="https://unpkg.com/esp-web-tools@9.0.3/dist/web/install-button.js?module"></script>
 	    		<esp-web-install-button manifest="manifest.json">
                     <button slot="activate" style="font-size: 1.2rem; padding: 12px 24px; background-color: #0066cc; color: white; border-radius: 8px; cursor: pointer; border: none;">
                         CONNECT (Click to Install)
@@ -263,6 +251,7 @@
 	</div>
 </body>
 </html>
+
 
 
 
