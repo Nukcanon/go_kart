@@ -6,12 +6,11 @@
 	<link rel="stylesheet" href="https://nukcanon.github.io/nukcanon/css/style.css" />
 	<script src="https://github.com/dbuezas/arduino-web-uploader/releases/download/v1.1.2/main.js"></script>
     <style>
-        /* 최신 표 스타일 */
         .wiring-table {
             border-collapse: collapse;
             width: 100%; 
-            max-width: 800px; /* 표 최대 너비 제한 */
-            margin: 20px auto; /* 가운데 정렬 */
+            max-width: 800px; 
+            margin: 20px auto;
             font-size: 1.1rem;
         }
         .wiring-table th, .wiring-table td {
@@ -29,7 +28,6 @@
             background-color: #f9f9f9;
         }
 
-        /* 섹션 구분 스타일 */
         .version-section {
             margin-top: 40px;
             padding-top: 20px;
@@ -45,7 +43,6 @@
             padding-bottom: 5px;
         }
 
-        /* 업로드 버튼 박스 스타일 */
         .upload-box-container {
             display: flex;
             flex-wrap: wrap;
@@ -185,9 +182,7 @@
                 </ol>
             </div>
 
-            <div style="display: block; width: 100%; text-align: center; margin: 0 auto; padding: 0px 6px 10px;">
-                <h4 style="margin-bottom: 5px;">▼ ESP32 연결도</h4>
-                
+            <div style="display: block; width: 100%; text-align: center; margin: 0 auto; padding: 0px 6px 10px;">    
                 <table class="wiring-table" style="margin: 10px auto;">
                     <thead>
                         <tr>
@@ -249,11 +244,10 @@
             <div style="text-align: center; max-width: 960px; margin: 10px auto;">
                 
                 <style>
-                    /* esp-web-install-button 내부의 버튼 스타일을 강제로 키움 */
                     esp-web-install-button::part(button) {
                         font-size: 1.2rem;
                         padding: 12px 24px;
-                        background-color: #0066cc; /* 원하는 버튼 색상 */
+                        background-color: #0066cc;
                         color: white;
                         border-radius: 8px;
                         cursor: pointer;
@@ -272,4 +266,5 @@
 	</div>
 </body>
 </html>
+
 
